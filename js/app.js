@@ -12,7 +12,6 @@ const objBusqueda = {
 
 
 const obtenerCriptomonedas = (criptomonedas) => new Promise(resolve => {
-  console.log(criptomonedas);
   resolve(criptomonedas);
 });
 
@@ -115,8 +114,6 @@ function consultarAPI() {
 function mostrarCotizacionHTML(cotizacion) {
 
   limpiarHTML();
-
-  console.log(cotizacion);
 
   const { PRICE, HIGHDAY, LOWDAY, CHANGEPCT24HOUR, LASTUPDATE } = cotizacion;
 
